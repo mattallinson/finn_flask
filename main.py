@@ -7,8 +7,14 @@ test_number = []
 def hello():
 	test_number.append(fnnm.number_maker())
 	return render_template('hello.html', number=test_number[-1])
+
+@app.route('/retry')
+def retry():
+	return render_template('hello.html', number=test_number[-1])
+
 	
-@app.route('/', methods=['POST'])	
+@app.route('/', methods=['POST'])
+@app.route('/retry', methods=['POST'])	
 def answer():
 	number = test_number[-1]
 	if request.method == 'POST':
