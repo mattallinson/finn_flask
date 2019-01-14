@@ -1,0 +1,43 @@
+body{
+	margin:20px auto;
+	max-width:500px;
+	line-height:1.6;
+	font-size:18px;
+	color:#444;
+	padding:0 10px
+}
+
+h1,h2,h3{
+	font-family: 'Seymour One', sans-serif;
+	line-height:1.2
+}
+
+p{
+	font-family: 'Noto Sans', sans-serif;
+}
+
+a:hover,p:hover,h1:hover {
+    background-color: fuchsia;
+    color: white;
+}
+
+img {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100%;
+    padding: 5px;
+    border: 5px hidden;
+}
+
+img:hover {
+    border: 5px solid fuchsia;
+    padding: 0px;
+
+}
+
+::selection{
+	background-color: fuchsia,
+	color: yellow;
+}
