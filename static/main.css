@@ -7,6 +7,14 @@ body{
 	padding:0 10px
 }
 
+.footer{ 
+	position: fixed;
+	text-align: center;    
+	bottom: 0px; 
+	margin:20px auto;
+	max-width:500px;
+}
+
 h1,h2,h3{
 	font-family: 'Seymour One', sans-serif;
 	line-height:1.2
@@ -16,8 +24,8 @@ p{
 	font-family: 'Noto Sans', sans-serif;
 }
 
-a:hover,p:hover,h1:hover {
-    background-color: fuchsia;
+a:hover{
+    background-color: blue;
     color: white;
 }
 
@@ -31,13 +39,10 @@ img {
     border: 5px hidden;
 }
 
-img:hover {
-    border: 5px solid fuchsia;
-    padding: 0px;
 
 }
 
-::selection{
-	background-color: fuchsia,
-	color: yellow;
+:: selection {
+	background-color: blue,
+	color: white;
 }
