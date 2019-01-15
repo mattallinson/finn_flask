@@ -77,7 +77,7 @@ def number_maker():
 def number_test(number):
 	while True:
 		check = input('What is the Finnish for ' +str(number) + '? ')
-		if str(check) == number_finnish_name_maker(number):
+		if str(check) == finnish_number_name_maker(number):
 			print('\twell done!')
 			return
 		else:
@@ -85,7 +85,7 @@ def number_test(number):
 
 def word_test(number):
 	while True:
-		check = input('What number is ' + number_finnish_name_maker(number) + '? ')
+		check = input('What number is ' + finnish_number_name_maker(number) + '? ')
 		if int(check) == number:
 			print('\twell done!')
 			return
